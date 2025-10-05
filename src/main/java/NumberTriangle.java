@@ -119,11 +119,6 @@ public class NumberTriangle {
         InputStream inputStream = NumberTriangle.class.getClassLoader().getResourceAsStream(fname);
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
 
-
-        // TODO define any variables that you want to use to store things
-
-        // will need to return the top of the NumberTriangle,
-        // so might want a variable for that.
         NumberTriangle top = null;
         List<NumberTriangle> triangles = new ArrayList<>();
         String line = br.readLine();
@@ -154,5 +149,6 @@ public class NumberTriangle {
         // Problem 18 from project Euler [not for credit]
         mt.maxSumPath();
         System.out.println(mt.getRoot());
+
     }
 }
